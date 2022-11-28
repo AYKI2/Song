@@ -21,9 +21,9 @@ public class Main {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("File not found!");
         }catch (NoSuchElementException e){
-            System.out.println("NO");
+            System.out.println("No more elements left!");
         }
         Song song = new Song(title,author,text);
         System.out.println(song);
